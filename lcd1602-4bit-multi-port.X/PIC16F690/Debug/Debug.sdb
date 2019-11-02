@@ -1,0 +1,386 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F690 ]
+[d frameptr 6 ]
+"14 E:\git\pic\___new-works___\lcd1602/lib/delay.h
+[v _delayUS delayUS `(v  1 e 1 0 ]
+"21
+[v _delayMS delayMS `(v  1 e 1 0 ]
+"77 E:\git\pic\___new-works___\lcd1602/lib/lcd1602.h
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+"93
+[v _lcdClear lcdClear `(v  1 e 1 0 ]
+"97
+[v _lcdProcess lcdProcess `(v  1 e 1 0 ]
+"149
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+"153
+[v _lcdData lcdData `(v  1 e 1 0 ]
+"161
+[v _lcdDataInt lcdDataInt `(v  1 e 1 0 ]
+"167
+[v _lcdDataFloat lcdDataFloat `(v  1 e 1 0 ]
+"187
+[v _lcdPutChar lcdPutChar `(v  1 e 1 0 ]
+"191
+[v _lcdDelay lcdDelay `(v  1 e 1 0 ]
+"195
+[v _lcdSetRegPin lcdSetRegPin `(v  1 e 1 0 ]
+"199
+[v _lcdClearRegPin lcdClearRegPin `(v  1 e 1 0 ]
+"27 E:\git\pic\___new-works___\lcd1602\lcd1602-4bit-multi-port.X/main.c
+[v _init init `(v  1 e 1 0 ]
+"55
+[v _main main `(i  1 e 2 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftoa.c
+[v _ftoa ftoa `(*.4uc  1 e 1 0 ]
+"18 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"45 E:\git\pic\___new-works___\lcd1602/lib/lcd1602.h
+[v _LCD_CMD_CLEAR LCD_CMD_CLEAR `DCui  1 e 2 0 ]
+"46
+[v _LCD_CMD_INCREMENT_CURSOR LCD_CMD_INCREMENT_CURSOR `DCui  1 e 2 0 ]
+"47
+[v _LCD_CMD_DISPLAY_ON_CURSOR_OFF LCD_CMD_DISPLAY_ON_CURSOR_OFF `DCui  1 e 2 0 ]
+"51
+[v _LCD_CMD_USE_4_BIT_2_LINE_5x7_MTX LCD_CMD_USE_4_BIT_2_LINE_5x7_MTX `DCui  1 e 2 0 ]
+"52
+[v _LCD_CMD_USE_8_BIT_2_LINE_5x7_MTX LCD_CMD_USE_8_BIT_2_LINE_5x7_MTX `DCui  1 e 2 0 ]
+"53
+[v _LCD_CMD_FIRST_LINE_FIRST_POS LCD_CMD_FIRST_LINE_FIRST_POS `DCui  1 e 2 0 ]
+"55
+[v _LCD_CMD_SECOND_LINE_FIRST_POS LCD_CMD_SECOND_LINE_FIRST_POS `DCui  1 e 2 0 ]
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+"25 E:\git\pic\___new-works___\lcd1602\lcd1602-4bit-multi-port.X/main.c
+[v _lcd lcd `S25  1 e 12 0 ]
+"214 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic16f690.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"253
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"1293
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1332
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"3285
+[v _ANS10 ANS10 `VEb  1 e 0 @2298 ]
+"3287
+[v _ANS11 ANS11 `VEb  1 e 0 @2299 ]
+"3293
+[v _ANS4 ANS4 `VEb  1 e 0 @2292 ]
+"3295
+[v _ANS5 ANS5 `VEb  1 e 0 @2293 ]
+"3297
+[v _ANS6 ANS6 `VEb  1 e 0 @2294 ]
+"3299
+[v _ANS7 ANS7 `VEb  1 e 0 @2295 ]
+"3301
+[v _ANS8 ANS8 `VEb  1 e 0 @2296 ]
+"3303
+[v _ANS9 ANS9 `VEb  1 e 0 @2297 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[v _dpowers dpowers `DC[10]ul  1 s 40 dpowers ]
+"55 E:\git\pic\___new-works___\lcd1602\lcd1602-4bit-multi-port.X/main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"81
+} 0
+"161 E:\git\pic\___new-works___\lcd1602/lib/lcd1602.h
+[v _lcdDataInt lcdDataInt `(v  1 e 1 0 ]
+{
+"162
+[v lcdDataInt@buf buf `[16]uc  1 a 16 4 ]
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+"161
+[v lcdDataInt@lcd lcd `S25  1 p 12 66 ]
+[v lcdDataInt@num num `i  1 p 2 78 ]
+"165
+} 0
+"167
+[v _lcdDataFloat lcdDataFloat `(v  1 e 1 0 ]
+{
+"170
+[v lcdDataFloat@c c `i  1 a 2 78 ]
+"171
+[v lcdDataFloat@di di `i  1 a 2 75 ]
+"168
+[v lcdDataFloat@status status `i  1 a 2 71 ]
+"169
+[v lcdDataFloat@str str `*.4uc  1 a 1 77 ]
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+"167
+[v lcdDataFloat@lcd lcd `S25  1 p 12 0 ]
+[v lcdDataFloat@num num `f  1 p 3 12 ]
+[v lcdDataFloat@precision precision `i  1 p 2 15 ]
+"185
+} 0
+"153
+[v _lcdData lcdData `(v  1 e 1 0 ]
+{
+"154
+[v lcdData@c c `i  1 a 2 64 ]
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+"153
+[v lcdData@lcd lcd `S25  1 p 12 42 ]
+[v lcdData@str str `*.26DCuc  1 p 2 54 ]
+"159
+} 0
+"187
+[v _lcdPutChar lcdPutChar `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdPutChar@lcd lcd `S25  1 p 12 23 ]
+[v lcdPutChar@str str `uc  1 p 1 35 ]
+"189
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftoa.c
+[v _ftoa ftoa `(*.4uc  1 e 1 0 ]
+{
+"10
+[v ftoa@l l `ul  1 a 4 45 ]
+[v ftoa@rem rem `ul  1 a 4 41 ]
+"9
+[v ftoa@cp cp `*.4uc  1 a 1 49 ]
+"6
+[v ftoa@f f `f  1 p 3 36 ]
+[v ftoa@status status `*.4i  1 p 1 39 ]
+"8
+[v ftoa@buf buf `[17]uc  1 s 17 buf ]
+"21
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"528
+[v sprintf@val val `ul  1 a 4 25 ]
+"504
+[v sprintf@prec prec `i  1 a 2 33 ]
+"501
+[v sprintf@width width `i  1 a 2 31 ]
+"499
+[v sprintf@c c `c  1 a 1 35 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 29 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 24 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 10 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 30 ]
+"1541
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 1 ]
+"15
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 9 ]
+"6
+[v ___llmod@divisor divisor `ul  1 p 4 0 ]
+[v ___llmod@dividend dividend `ul  1 p 4 4 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"31
+} 0
+"35 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 13 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 8 ]
+"46
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 19 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 23 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 18 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 10 ]
+"73
+} 0
+"18 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f2 f2 `f  1 p 3 7 ]
+[v ___ftsub@f1 f1 `f  1 p 3 10 ]
+"27
+} 0
+"86 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 6 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 5 ]
+[v ___ftadd@sign sign `uc  1 a 1 4 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 8 ]
+[v ___ftadd@f2 f2 `f  1 p 3 11 ]
+"148
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 0 ]
+"20
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 5 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 9 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 8 ]
+[v ___ftmul@exp exp `uc  1 a 1 4 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 8 ]
+[v ___ftmul@f2 f2 `f  1 p 3 11 ]
+"157
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 0 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 3 ]
+"13
+} 0
+"27 E:\git\pic\___new-works___\lcd1602\lcd1602-4bit-multi-port.X/main.c
+[v _init init `(v  1 e 1 0 ]
+{
+"53
+} 0
+"77 E:\git\pic\___new-works___\lcd1602/lib/lcd1602.h
+[v _lcdInit lcdInit `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdInit@lcd lcd `S25  1 p 12 57 ]
+"91
+} 0
+"93
+[v _lcdClear lcdClear `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdClear@lcd lcd `S25  1 p 12 41 ]
+"95
+} 0
+"149
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdCommand@lcd lcd `S25  1 p 12 23 ]
+[v lcdCommand@cmd cmd `ui  1 p 2 35 ]
+"151
+} 0
+"97
+[v _lcdProcess lcdProcess `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdProcess@lcd lcd `S25  1 p 12 2 ]
+[v lcdProcess@cmd cmd `ui  1 p 2 14 ]
+[v lcdProcess@isData isData `ui  1 p 2 16 ]
+"147
+} 0
+"195
+[v _lcdSetRegPin lcdSetRegPin `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdSetRegPin@lcd lcd `S25  1 p 12 0 ]
+[v lcdSetRegPin@pin pin `uc  1 p 1 12 ]
+"197
+} 0
+"191
+[v _lcdDelay lcdDelay `(v  1 e 1 0 ]
+{
+"193
+} 0
+"14 E:\git\pic\___new-works___\lcd1602/lib/delay.h
+[v _delayUS delayUS `(v  1 e 1 0 ]
+{
+[v delayUS@us us `ui  1 p 2 0 ]
+"19
+} 0
+"199 E:\git\pic\___new-works___\lcd1602/lib/lcd1602.h
+[v _lcdClearRegPin lcdClearRegPin `(v  1 e 1 0 ]
+{
+[s S25 LCD_1602 12 `*.39uc 1 regPort 2 0 `ui 1 regRS 2 2 `ui 1 regRW 2 4 `ui 1 regEN 2 6 `*.39uc 1 dataPort 2 8 `ui 1 use4Bit 2 10 ]
+[v lcdClearRegPin@lcd lcd `S25  1 p 12 0 ]
+[v lcdClearRegPin@pin pin `uc  1 p 1 12 ]
+"201
+} 0
+"21 E:\git\pic\___new-works___\lcd1602/lib/delay.h
+[v _delayMS delayMS `(v  1 e 1 0 ]
+{
+[v delayMS@us us `ui  1 p 2 0 ]
+"26
+} 0

@@ -1,0 +1,1 @@
+ main.d  main.p1:  ../../main.c ../../../lib/lcd1602.h ../../../lib/delay.h

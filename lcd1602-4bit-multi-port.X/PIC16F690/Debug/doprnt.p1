@@ -1,0 +1,337 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"10 C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdarg.h
+[v ___va_start `(*v ~T0 @X0 0 ef ]
+[p i ___va_start ]
+"7 C:\Program Files (x86)\Microchip\xc8\v1.43\include\ctype.h
+[v _isdigit `(b ~T0 @X0 0 ef1`uc ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.43\include\stdarg.h
+[v ___va_arg `(*v ~T0 @X0 0 ev`*v ]
+[p i ___va_arg ]
+"13 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\doprnt.c
+[p n 350 ]
+"354
+[v _dpowers `Cul ~T0 @X0 -> 0 `x s ]
+[i _dpowers
+:U ..
+-> -> -> 1 `i `l `ul
+-> -> -> 10 `i `l `ul
+-> -> -> 100 `i `l `ul
+-> -> -> 1000 `i `l `ul
+-> -> -> 10000 `i `l `ul
+"356
+-> -> 100000 `l `ul
+-> -> 1000000 `l `ul
+-> -> 10000000 `l `ul
+-> -> 100000000 `l `ul
+"359
+-> -> 1000000000 `l `ul
+..
+]
+"492
+[v _sprintf `(i ~T0 @X0 1 e1v`*uc`*Cuc ]
+"493
+{
+[e :U _sprintf ]
+"492
+[v _sp `*uc ~T0 @X0 1 r1 ]
+[v _f `*Cuc ~T0 @X0 1 r0 ]
+"493
+[f ]
+"494
+[v _ap `*v ~T0 @X0 -> -> 1 `i `ux a ]
+"499
+[v _c `c ~T0 @X0 1 a ]
+"501
+[v _width `i ~T0 @X0 1 a ]
+"504
+[v _prec `i ~T0 @X0 1 a ]
+"508
+[v _flag `uc ~T0 @X0 1 a ]
+"523
+[u S6 `ul 1 `d 1 ]
+[n S6 . vd integ ]
+"526
+[v _tmpval `S6 ~T0 @X0 1 a ]
+"528
+[v _val `ul ~T0 @X0 1 a ]
+"529
+[v _len `ui ~T0 @X0 1 a ]
+"530
+[v _cp `*Cuc ~T0 @X0 1 a ]
+"533
+[e = *U &U _ap ( ___va_start ..  ]
+"536
+[e $U 8  ]
+[e :U 9 ]
+{
+"538
+[e $ ! != -> -> _c `i `ui -> 37 `ui 11  ]
+"540
+{
+"541
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> _c `uc ]
+"542
+[e $U 8  ]
+"543
+}
+[e :U 11 ]
+"546
+[e = _width -> 0 `i ]
+"548
+[e = _flag -> -> 0 `i `uc ]
+"597
+[e $ ! ( _isdigit (1 -> -> *U _f `ui `uc 12  ]
+{
+"598
+[e = _width -> 0 `i ]
+"599
+[e :U 15 ]
+{
+"600
+[e =* _width -> 10 `i ]
+"601
+[e =+ _width -> - -> *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `ui -> 48 `ui `i ]
+"602
+}
+[e $ ( _isdigit (1 -> -> *U _f `ui `uc 15  ]
+[e :U 14 ]
+"608
+}
+[e :U 12 ]
+"611
+[e $ ! == -> *U _f `ui -> 46 `ui 16  ]
+{
+"612
+[e =| _flag -> -> 16384 `i `uc ]
+"613
+[e ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x ]
+"620
+{
+"621
+[e = _prec -> 0 `i ]
+"622
+[e $U 17  ]
+[e :U 18 ]
+"623
+[e = _prec -> - -> + * _prec -> 10 `i -> *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `i `ui -> 48 `ui `i ]
+[e :U 17 ]
+"622
+[e $ ( _isdigit (1 -> -> *U _f `ui `uc 18  ]
+[e :U 19 ]
+"624
+}
+"625
+}
+[e $U 20  ]
+[e :U 16 ]
+{
+"626
+[e = _prec -> 0 `i ]
+"630
+}
+[e :U 20 ]
+"633
+[e :U 21 ]
+"635
+[e $U 23  ]
+{
+"637
+[e :U 24 ]
+"638
+[e $U 25  ]
+"641
+[e :U 26 ]
+"643
+[e =| _flag -> -> 16 `i `uc ]
+"644
+[e $U 21  ]
+"697
+[e :U 27 ]
+"698
+[e :U 28 ]
+"699
+[e $U 22  ]
+"802
+[e :U 29 ]
+"813
+[e $U 8  ]
+"817
+[e :U 30 ]
+"818
+[e =| _flag -> -> 64 `i `uc ]
+"819
+[e $U 22  ]
+"822
+}
+[e $U 22  ]
+"635
+[e :U 23 ]
+[e [\ = _c -> *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `c , $ -> -> 0 `i `c 24
+ , $ -> -> 108 `ui `c 26
+ , $ -> -> 100 `ui `c 27
+ , $ -> -> 105 `ui `c 28
+ , $ -> -> 117 `ui `c 30
+ 29 ]
+"822
+[e :U 22 ]
+"1251
+[e $ ! == & -> _flag `i -> 64 `i -> 0 `i 31  ]
+"1253
+{
+"1255
+[e $ ! != & -> _flag `i -> 16 `i -> 0 `i 32  ]
+"1256
+[e = _val -> *U -> ( ___va_arg , (. -> *U -> &U _ap `**l `*v -> -> 0 `i `l `*l `ul ]
+[e $U 33  ]
+"1257
+[e :U 32 ]
+"1259
+[e = _val -> -> *U -> ( ___va_arg , (. -> *U -> &U _ap `**i `*v -> 0 `i `*i `l `ul ]
+[e :U 33 ]
+"1261
+[e $ ! < -> _val `l -> -> 0 `i `l 34  ]
+{
+"1262
+[e =| _flag -> -> 3 `i `uc ]
+"1263
+[e = _val -U _val ]
+"1264
+}
+[e :U 34 ]
+"1266
+}
+[e $U 35  ]
+"1268
+[e :U 31 ]
+"1273
+{
+"1281
+[e $ ! != & -> _flag `i -> 16 `i -> 0 `i 36  ]
+"1282
+[e = _val *U -> ( ___va_arg , (. -> *U -> &U _ap `**ul `*v -> -> 0 `i `ul `*ul ]
+[e $U 37  ]
+"1283
+[e :U 36 ]
+"1286
+[e = _val -> *U -> ( ___va_arg , (. -> *U -> &U _ap `**ui `*v -> -> 0 `i `ui `*ui `ul ]
+[e :U 37 ]
+"1287
+}
+[e :U 35 ]
+"1290
+[e $ ! && == _prec -> 0 `i == _val -> -> -> 0 `i `l `ul 38  ]
+"1291
+[e ++ _prec -> 1 `i ]
+[e :U 38 ]
+"1305
+{
+[e = _c -> -> 1 `i `c ]
+[e $ != -> -> _c `i `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 39  ]
+[e $U 40  ]
+"1306
+[e :U 39 ]
+[e $ ! < _val *U + &U _dpowers * -> -> _c `uc `ux -> -> # *U &U _dpowers `ui `ux 42  ]
+"1307
+[e $U 40  ]
+[e :U 42 ]
+"1305
+[e ++ _c -> -> 1 `i `c ]
+[e $ != -> -> _c `i `ui / -> # _dpowers `ui -> # *U + &U _dpowers * -> -> -> 0 `i `ui `ux -> -> # *U &U _dpowers `ui `ux `ui 39  ]
+[e :U 40 ]
+"1339
+}
+[e $ ! < -> _c `i _prec 43  ]
+"1340
+[e = _c -> _prec `c ]
+[e $U 44  ]
+"1341
+[e :U 43 ]
+[e $ ! < _prec -> _c `i 45  ]
+"1342
+[e = _prec -> _c `i ]
+[e :U 45 ]
+"1345
+[e :U 44 ]
+[e $ ! && != _width -> 0 `i != & -> _flag `i -> 3 `i -> 0 `i 46  ]
+"1346
+[e -- _width -> 1 `i ]
+[e :U 46 ]
+"1348
+[e $ ! != & -> _flag `i -> 16384 `i -> 0 `i 47  ]
+{
+"1349
+[e $ ! > _width _prec 48  ]
+"1350
+[e =- _width _prec ]
+[e $U 49  ]
+"1351
+[e :U 48 ]
+"1352
+[e = _width -> 0 `i ]
+[e :U 49 ]
+"1353
+}
+[e :U 47 ]
+"1381
+[e $ ! > _width -> _c `i 50  ]
+"1382
+[e =- _width -> _c `i ]
+[e $U 51  ]
+"1383
+[e :U 50 ]
+"1384
+[e = _width -> 0 `i ]
+[e :U 51 ]
+"1422
+{
+"1428
+[e $ ! != _width -> 0 `i 52  ]
+"1429
+[e :U 55 ]
+"1430
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 32 `ui `uc ]
+"1431
+[e $ != =- _width -> 1 `i -> 0 `i 55  ]
+[e :U 54 ]
+[e :U 52 ]
+"1438
+[e $ ! != & -> _flag `i -> 3 `i -> 0 `i 56  ]
+"1439
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> -> 45 `ui `uc ]
+[e :U 56 ]
+"1469
+}
+"1474
+[e $U 57  ]
+[e :U 58 ]
+{
+"1478
+{
+"1489
+[e = _c -> + % / _val *U + &U _dpowers * -> -> _prec `ui `ux -> -> # *U &U _dpowers `ui `ux -> -> -> 10 `i `l `ul -> -> 48 `ui `ul `c ]
+"1523
+}
+"1524
+[e = *U ++ _sp * -> -> 1 `i `x -> -> # *U _sp `i `x -> _c `uc ]
+"1525
+}
+[e :U 57 ]
+"1474
+[e $ != -- _prec -> 1 `i -> 0 `i 58  ]
+[e :U 59 ]
+"1533
+}
+[e :U 8 ]
+"536
+[e $ != -> = _c -> *U ++ _f * -> -> 1 `i `x -> -> # *U _f `i `x `c `i -> -> -> 0 `i `c `i 9  ]
+[e :U 10 ]
+"1535
+[e :U 25 ]
+"1538
+[e = *U _sp -> -> 0 `i `uc ]
+"1540
+[e ) -> 0 `i ]
+[e $UE 7  ]
+"1541
+[e :UE 7 ]
+}

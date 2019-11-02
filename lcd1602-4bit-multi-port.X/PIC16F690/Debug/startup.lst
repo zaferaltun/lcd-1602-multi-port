@@ -1,0 +1,109 @@
+
+
+Microchip Technology PIC Macro Assembler V1.43 build -156212558 
+                                                                                                           Sun Nov 03 00:13:31 2019
+
+
+     1                           
+     2                           	; Microchip MPLAB XC8 C Compiler V1.43
+     3                           	; Copyright (C) 1984-2017 HI-TECH Software
+     4                           
+     5                           	; Auto-generated runtime startup code for final link stage.
+     6                           
+     7                           	;
+     8                           	; Compiler options:
+     9                           	;
+    10                           	; --output=mcof -G --chip=16F690 -ODebug.cof main.p1
+    11                           	;
+    12                           
+    13                           
+    14                           	processor	16F690
+    15                           
+    16                           	global	_main,start,reset_vec
+    17                           	fnroot	_main
+    18                           	psect	config,class=CONFIG,delta=2,noexec
+    19                           	psect	idloc,class=IDLOC,delta=2,noexec
+    20                           	psect	code,class=CODE,delta=2
+    21                           	psect	powerup,class=CODE,delta=2
+    22                           	psect	reset_vec,class=CODE,delta=2
+    23                           	psect	maintext,class=CODE,delta=2
+    24  0000                     	Z	set	2
+    25  0002                     	PCL	set	2
+    26  0002                     	INDF	set	0
+    27  0000                     
+    28                           	STATUS	equ	3
+    29  0003                     	PCLATH	equ	0Ah
+    30  000A                     
+    31                           	psect	eeprom_data,class=EEDATA,delta=2,space=3,noexec
+    32                           	psect	intentry,class=CODE,delta=2
+    33                           	psect	functab,class=ENTRY,delta=2
+    34                           	global	intlevel0,intlevel1,intlevel2, intlevel3, intlevel4, intlevel5
+    35                           intlevel0:
+    36  0000                     intlevel1:
+    37  0000                     intlevel2:
+    38  0000                     intlevel3:
+    39  0000                     intlevel4:
+    40  0000                     intlevel5:
+    41  0000                     	psect	init,class=CODE,delta=2
+    42                           	psect	cinit,class=CODE,delta=2
+    43                           	psect	text,class=CODE,delta=2
+    44                           	psect	end_init,class=CODE,delta=2
+    45                           	psect	clrtext,class=CODE,delta=2
+    46                           	FSR	set	4
+    47  0004                     	psect	strings,class=CODE,delta=2,reloc=256
+    48                           
+    49                           	global stacklo, stackhi
+    50                           	stacklo	equ	0
+    51  0000                     	stackhi	equ	0
+    52  0000                     
+    53                           
+    54                           	psect	stack,class=STACK,space=2,noexec
+    55                           	global ___sp,___int_sp
+    56                           	___sp:
+    57  0000                     	___int_sp:
+    58  0000                     	psect	reset_vec
+    59                           reset_vec:
+    60  0000                     	; No powerup routine
+    61                           	; No interrupt routine
+    62                           
+    63                           
+    64                           	psect	init
+    65                           start
+    66  0000                     	psect	end_init
+    67                           	global start_initialization
+    68                           	ljmp start_initialization	;jump to C runtime clear & initialization
+    69  0000  118A  2FF7         
+    70                           ; Config register CONFIG @ 0x2007
+    71                           ;	Oscillator Selection bits
+    72                           ;	FOSC = INTRCIO, INTOSCIO oscillator: I/O function on RA4/OSC2/CLKOUT pin, I/O function on RA5/OSC1
+                                 /CLKIN
+    73                           ;	Watchdog Timer Enable bit
+    74                           ;	WDTE = OFF, WDT disabled and can be enabled by SWDTEN bit of the WDTCON register
+    75                           ;	Power-up Timer Enable bit
+    76                           ;	PWRTE = 0x1, unprogrammed default
+    77                           ;	MCLR Pin Function Select bit
+    78                           ;	MCLRE = 0x1, unprogrammed default
+    79                           ;	Code Protection bit
+    80                           ;	CP = 0x1, unprogrammed default
+    81                           ;	Data Code Protection bit
+    82                           ;	CPD = 0x1, unprogrammed default
+    83                           ;	Brown-out Reset Selection bits
+    84                           ;	BOREN = 0x3, unprogrammed default
+    85                           ;	Internal External Switchover bit
+    86                           ;	IESO = 0x1, unprogrammed default
+    87                           ;	Fail-Safe Clock Monitor Enabled bit
+    88                           ;	FCMEN = 0x1, unprogrammed default
+    89                           
+    90                           	psect	config
+    91                           		org 0x0
+    92  2007                     		dw 0xFFF4
+    93  2007  FFF4               
+
+
+Microchip Technology PIC Macro Assembler V1.43 build -156212558 
+Symbol Table                                                                                               Sun Nov 03 00:13:31 2019
+
+               ___sp 0000                 _main 020D                 start 0000               stackhi 0000  
+             stacklo 0000  start_initialization 07F7             ___int_sp 0000             intlevel0 0000  
+           intlevel1 0000             intlevel2 0000             intlevel3 0000             intlevel4 0000  
+           intlevel5 0000             reset_vec 0000  
